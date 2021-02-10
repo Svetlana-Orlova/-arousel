@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Карусель</title>
+  <link rel="preload" href="css/styles.min.css" as="style">
+  <link rel="preload" href="fonts/futuramedium.woff" as="font">
+  <link rel="preload" href="fonts/futuraregular.woff" as="font">
+  <link rel="preload" href="fonts/futurabold.woff" as="font">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="page-body">
+  <main class="page-main">
+    <div class="page-title">
+      <h1 class="page-title__title">Портфолио</h1>
+      <a class="page-title__button button" href="#">Смотреть портфолио</a>
+    </div>
+    <section class="cards">
+      <h2 class="visually-hidden">
+        Статьи и предложения
+      </h2>
+      <div class="slider">
+        <div class="slider-arrow-right next"></div>
+        <div class="slider-arrow-left prev"></div>
+        <input class="radio1" type="radio" id="btn-1" name="toggle" checked>
+        <input class="radio2" type="radio" id="btn-2" name="toggle">
+        <input class="radio3" type="radio" id="btn-3" name="toggle">
+        <input class="radio4" type="radio" id="btn-4" name="toggle">
+        <input class="radio5" type="radio" id="btn-5" name="toggle">
+        <input class="radio6" type="radio" id="btn-6" name="toggle">
+        <input class="radio7" type="radio" id="btn-7" name="toggle">
+        <input class="radio8" type="radio" id="btn-8" name="toggle">
+        <input class="radio9" type="radio" id="btn-9" name="toggle">
+        <input class="radio10" type="radio" id="btn-10" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+          <label for="btn-4"></label>
+          <label for="btn-5"></label>
+          <label for="btn-6"></label>
+          <label for="btn-7"></label>
+          <label for="btn-8"></label>
+          <label for="btn-9"></label>
+          <label for="btn-10"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <ul class="slider-list">
+              <li class="slider-item">
+                <a class="cards__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 600px)" srcset="img/home-theater_1x.webp 1x, img/home-theater_2x.webp 2x">
+                    <source type="image/webp" srcset="img/home-theater-mobile_1x.webp 1x, img/home-theater-mobile_2x.webp 2x">
+                    <source media="(min-width: 600px)" srcset="img/home-theater@1x.jpg 1x, img/home-theater@2x.jpg 2x">
+                    <img class="cards__img" src="img/home-theater-mobile@1x.jpg" srcset="img/home-theater-mobile@2x.jpg 2x" width="300" height="360" alt="Домашний кинотеатр">
+                  </picture>
+                  <h3 class="cards__subtitle">Домашний кинотеатр <br>с изюминкой</h3>
+                </a>
+                <p class="cards__description">В нашем новом проекте домашнего кинотеатра задача была в целом довольно типичной – построить систему с использованием встроенных акустических систем.</p>
+              </li>
+              <li class="slider-item">
+                <a class="cards__link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/car-cinema_1x.webp 1x, img/car-cinema_2x.webp 2x">
+                    <img class="cards__img" src="img/car-cinema@1x.jpg" srcset="img/car-cinema@2x.jpg 2x" width="300" height="360" alt="Кинотеатр в авто">
+                  </picture>
+                  <h3 class="cards__subtitle">Роскошный автомобиль <br>с «умным салоном»</h3>
+                </a>
+                <p class="cards__description">Эксклюзивный Mercedes Benz V class обрел не только шикарный салон первого класса с креслами, баром, сейфом и телевизором, но и благодаря нашей помощи позволил управлять всем этим богатством с iPad!</p>
+              </li>
+              <li class="slider-item">
+                <a class="cards__link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/livingroom-cinema_1x.webp 1x, img/livingroom-cinema_2x.webp 2x">
+                    <img class="cards__img" src="img/livingroom-cinema@1x.jpg" srcset="img/livingroom-cinema@2x.jpg 2x" width="300" height="360" alt="Гостиная-кинотеатр">
+                  </picture>
+                  <h3 class="cards__subtitle">Гостиная-кинотеатр</h3>
+                </a>
+                <p class="cards__description">Посмотрев на фотографии этой светлой гостиной сразу и не поймешь, что расположена она в цокольном этаже дома и не имеет окон.</p>
+              </li>
+              <li class="slider-item">
+                <a class="cards__link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/rooftop-cinema_1x.webp 1x, img/rooftop-cinema_2x.webp 2x">
+                    <img class="cards__img" src="img/rooftop-cinema@1x.jpg" srcset="img/rooftop-cinema@2x.jpg 2x" width="300" height="360" alt="Кинотеатр на крыше">
+                  </picture>
+                  <h3 class="cards__subtitle">Кинотеатр на крыше</h3>
+                </a>
+                <p class="cards__description">Посмотрев на фотографии этой светлой гостиной сразу и не поймешь, что расположена она в цокольном этаже дома и не имеет окон.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="button button-expert" href="#">Заказать выезд специалиста</a>
+        <a class="button button-project" href="#">Заказать проектирование</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let width = 0;
+
+    if (window.innerWidth < 1920) {
+      width = 310;
+    } else {
+      width = 450;
+    }
+
+    let count = 4;
+    let slider = document.querySelector('.slider');
+
+    let sliderSlides = slider.querySelector('.slider-slides');
+    let listElems = slider.querySelectorAll('li');
+
+    let position = 0;
+
+    slider.querySelector('.prev').onclick = function() {
+      position += width;
+      position = Math.min(position, 0);
+      sliderSlides.style.marginLeft = position + 'px';
+    };
+
+    slider.querySelector('.next').onclick = function() {
+      position -= width;
+      position = Math.max(position, -width * (listElems.length-count));
+      sliderSlides.style.marginLeft = position + 'px';
+    };
+  </script>
+
+</body>
+
+</html>
